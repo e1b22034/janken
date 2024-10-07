@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>じゃんけん</title>
+</head>
+
+<body>
+  <h1>Hi ${username}</h1>
+  <h2>手を選んでください：</h2>
+  <a href="/janken?hand=rock">グー</a>
+  <a href="/janken?hand=scissors">チョキ</a>
+  <a href="/janken?hand=paper">パー</a>
+
+  <div>
+    <p>あなたの手: ${userHand}</p>
+    <p>相手の手: ${cpuHand}</p>
+    <p>結果: ${result}</p>
+  </div>
+</body>
+
+</html>
