@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janken GAME!</title>
+</head>
+
+<body>
+  <h1>Janken GAME!</h1>
+  <p>Hi {{username}}</p>
+  <a href="/jankengame?hand=Gu">ぐー</a>
+  <a href="/jankengame?hand=Choki">ちょき</a>
+  <a href="/jankengame?hand=Pa">ぱー</a>
+
+  {% if userHand %}
+  <p>あなたの手 {{userHand}}</p>
+  <p>相手の手 {{cpuHand}}</p>
+  <p>結果 {{result}}</p>
+  {% endif %}
+</body>
+
+</html>
